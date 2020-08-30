@@ -1,0 +1,22 @@
+form {
+    &.is-readonly {
+        .btn-save {
+            display: none;
+        }
+        input,textarea{
+            &[disabled] {
+                cursor: text;
+                background-color: #fff;
+                border-color: transparent;
+                outline-color: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+    &.is-editing {
+        .btn-edit{
+            display: none;
+        }
+    }
+}
+
